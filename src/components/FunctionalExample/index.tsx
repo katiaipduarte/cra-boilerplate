@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios, { AxiosResponse } from "axios";
-import { Example } from "../@types/Example";
+import { Example } from "../../@types/Example";
 
-function ClassExample() {
+const FunctionalExample = (): JSX.Element => {
   const [posts, setPosts] = useState<Example[]>([]);
 
   useEffect(() => {
@@ -21,6 +21,6 @@ function ClassExample() {
       ))}
     </ul>
   );
-}
+};
 
-export default ClassExample;
+export default FunctionalExample;

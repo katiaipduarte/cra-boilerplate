@@ -1,9 +1,10 @@
 import React from "react";
 
-import ClassExample from "./components/ClassExample";
+import ClassExample from "../components/ClassExample";
+import FunctionalExample from "../components/FunctionalExample";
 
-import logo from "./logo.svg";
-import "./App.css";
+import logo from "../logo.svg";
+import "../styles/App.css";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
           Learn React
         </a>
       </header>
-      <ClassExample />
+      {/* <ClassExample /> */}
+      <FunctionalExample />
     </div>
   );
 }
